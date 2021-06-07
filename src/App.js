@@ -28,12 +28,12 @@ const App = () => {
         />
         <Route path="/join-bb" component={JoinForm} />
         <Route path="/summer-program" component={SummerProgram} />
-        <Route path="/course" component={CourseView} />
+        <Route path="/course/:sub/:course" component={CourseView} />
       </Switch>
+      <ContactUs />
+      <Footer />
     </>
   );
 };
-//<ContactUs />
-//<Footer />
 
 export default App;

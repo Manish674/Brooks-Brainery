@@ -186,9 +186,9 @@ const SummerProgram = () => {
             </h2>
           </div>
           <div className="mt-[2rem] md:w-5/12">
-            <Carousel emulateTouch="true">
-              {sciMath.map(({ svg, title }) => (
-                <SCarousel svg={svg} title={title} />
+            <Carousel interval="20000" emulateTouch="true">
+              {sciMath.map(({ svg, title }, i) => (
+                <SCarousel path={`course/sci/${i}`} svg={svg} title={title} />
               ))}
             </Carousel>
           </div>
@@ -206,9 +206,9 @@ const SummerProgram = () => {
             </h2>
           </div>
           <div className="mt-[2rem] md:w-5/12">
-            <Carousel emulateTouch="true">
-              {techCS.map(({ svg, title }) => (
-                <TechCarousel svg={svg} title={title} />
+            <Carousel interval="20000" emulateTouch="true">
+              {techCS.map(({ svg, title }, i) => (
+                <TechCarousel path={`course/cs/${i}`} svg={svg} title={title} />
               ))}
             </Carousel>
           </div>
@@ -227,9 +227,13 @@ const SummerProgram = () => {
             </h2>
           </div>
           <div className="mt-[2rem] md:w-5/12">
-            <Carousel emulateTouch="true">
-              {BuCo.map(({ svg, title }) => (
-                <BuCarousel svg={svg} title={title} />
+            <Carousel interval="20000" emulateTouch="true">
+              {BuCo.map(({ svg, title }, i) => (
+                <BuCarousel
+                  path={`course/commerce/${i}`}
+                  svg={svg}
+                  title={title}
+                />
               ))}
             </Carousel>
           </div>
@@ -248,9 +252,9 @@ const SummerProgram = () => {
             </h2>
           </div>
           <div className="mt-[2rem] md:w-5/12">
-            <Carousel emulateTouch="true">
-              {LawLiberal.map(({ svg, title }) => (
-                <LawCarousel svg={svg} title={title} />
+            <Carousel interval="20000" emulateTouch="true">
+              {LawLiberal.map(({ svg, title }, i) => (
+                <LawCarousel path={`course/law/${i}`} svg={svg} title={title} />
               ))}
             </Carousel>
           </div>
