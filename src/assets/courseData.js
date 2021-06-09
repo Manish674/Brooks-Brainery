@@ -1,5 +1,11 @@
+import BuLogo from "../imgs/BuLogo";
+import Computer from "../imgs/Computer";
+import LawLogo from "../imgs/LawLogo";
+import { coursePlus } from "../imgs/SummerProgramSvgs";
+
 const courseData = {
   sci: {
+    svg: coursePlus,
     0: {
       title: "Medical Startups",
       author: "Smiti Mittal",
@@ -33,6 +39,7 @@ const courseData = {
 
   // COMPUTER SCIENCE
   cs: {
+    svg: Computer,
     0: {
       title: "Introduction to Python",
       author: "Harikrishna Kommineni (AI 4 Change)",
@@ -86,6 +93,7 @@ const courseData = {
   },
 
   commerce: {
+    svg: BuLogo,
     0: {
       title: "Introduction to Business",
       author: "Mabel Lyu",
@@ -140,6 +148,7 @@ const courseData = {
   },
 
   law: {
+    svg: LawLogo,
     0: {
       title: "Making of Capitalism",
       author: "Ravichandra Tadigadapa",

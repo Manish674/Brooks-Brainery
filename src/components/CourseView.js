@@ -1,5 +1,5 @@
 import React from "react";
-import { Calender, coursePlus, Duration } from "../imgs/SummerProgramSvgs";
+import { Calender, Duration } from "../imgs/SummerProgramSvgs";
 import { GiPlagueDoctorProfile } from "react-icons/gi";
 import bg from "../assets/bg.jpg";
 import courseData from "../assets/courseData";
@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 const CourseView = () => {
   const { sub, course } = useParams();
   const { author, curriculum, qualification, title } = courseData[sub][course];
+  const { svg } = courseData[sub];
   return (
     <div className="w-4/5 mx-auto ">
       <img
@@ -16,16 +17,20 @@ const CourseView = () => {
         alt="bg"
       />
       <div className="flex justify-around mx-auto md:justify-between ">
-        <div className="flex flex-col justify-between ">
-          <h1 style={{ fontSize: "clamp(1.3rem, 4vw + 1rem, 40px)" }}>
+        <div className="w-[60%] max-w-[448px] flex flex-col justify-between ">
+          <h1
+            className=""
+            style={{ fontSize: "clamp(1.3rem, 4vw + 1rem, 40px)" }}
+          >
             {title}
           </h1>
           <div className="bg-[#ffe5f2] text-center text-black">
             <h1 className="m-[0.4rem]">101 SC</h1>
           </div>
         </div>
-        <div className="w-[40%] ml-[1rem] bg-[yellow] flex items-center max-w-[267px]">
-          {coursePlus}
+        <div className="w-[40%] flex justify-center itmes-center ml-[1rem] bg-[yellow] flex items-center max-w-[267px]">
+          {/*coursePlus*/}
+          {svg}
         </div>
       </div>
       <div className="lg:w-[60%] lg:ml-auto  mt-[3rem] ">
@@ -65,7 +70,7 @@ const CourseView = () => {
         </div>
         <div className="flex items-center justify-end mt-[3rem]">
           <button className="lg:w-[13rem]  mb-8  bg-[#8ED100] mt-4  p-4 px-auto rounded-full w-[9rem] text-black font-bold">
-            Enroll
+            <a href="https://tinyurl.com/BBSP2021">Enroll</a>
           </button>
         </div>
       </div>

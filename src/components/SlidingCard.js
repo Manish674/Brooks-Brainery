@@ -7,23 +7,20 @@ import { Carousel } from "react-responsive-carousel";
 const offerData = [
   {
     heading: "Summer Program",
-    para:
-      "The Brooks Brainery Summer Program is a four-week long remote program for High Schoolers.",
+    para: "The Brooks Brainery Summer Program is a four-week long remote program for High Schoolers.",
     month: "June - July",
     bgColor: "bg-gray-400",
     link: "/summer-program",
   },
   {
     heading: "Tutoring",
-    para:
-      "This not only personalizes a student’s learning path, but also caters their specific needs and requirements. This program is taught by handpicked tutors and available on-demand.",
+    para: "This not only personalizes a student’s learning path, but also caters their specific needs and requirements. This program is taught by handpicked tutors and available on-demand.",
     bgColor: "bg-yellow-400",
     link: "",
   },
   {
     heading: "Test Preparation",
-    para:
-      "Brooks Brainery FREE SAT/ACT Prep is a tailored small-group course for students, delivered live and online, to achieve the perfect test scores.",
+    para: "Brooks Brainery FREE SAT/ACT Prep is a tailored small-group course for students, delivered live and online, to achieve the perfect test scores.",
     bgColor: "bg-blue-400",
     link: "",
   },

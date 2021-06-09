@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../assets/bg.jpg";
 import { FiInstagram, FiFacebook, FiLinkedin } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,31 +16,31 @@ const Footer = () => {
           <div className="flex flex-col items-center w-1/2 text-center lg:justify-around lg:items-center lg:flex-row ">
             <ul className="">
               <li>
-                <a href="#" className="hover:underline ">
+                <Link to="" className="hover:underline ">
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="" className="hover:underline">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="" className="hover:underline">
                   Summer Program
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="" className="hover:underline">
                   Test Preparation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link to="" className="hover:underline">
                   Tutoring
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -57,49 +58,51 @@ const Footer = () => {
             </div>
             <ul>
               <li>
-                <a href="#" className="hover:underline text-redi">
+                <Link to="" className="hover:underline text-redi">
                   Become a student
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline text-greeni">
+                <Link to="" className="hover:underline text-greeni">
                   Voluteer as student
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline text-bluei">
+                <Link to="/join-bb" className="hover:underline text-bluei">
                   Join BB team
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="flex flex-col justify-between mx-auto mt-4 mb-4 lg:flex-row lg:w-4/5">
-        <ul className="flex flex-row justify-around w-full lg:max-w-2xl mt-2 ">
+        <ul className="flex flex-row justify-around w-full mt-2 lg:max-w-2xl ">
           <li>
-            <a href="#" className="hover:underline">
+            <Link to="/cookie-policy" className="hover:underline">
               Cookie policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <Link to="/privacy-policy" className="hover:underline">
               Privacy policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <Link to="/termsofservice" className="hover:underline">
               Terms of Service
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <Link to="/copyright" className="hover:underline">
               Copyright
-            </a>
+            </Link>
           </li>
         </ul>
         <span className="flex justify-center w-full mt-2 lg:justify-end lg:max-w-2xl ">
-          <a href="#">Copyright © Brooks Brainery. All Rights Reserved.</a>
+          <Link to="/copyrigth">
+            Copyright © Brooks Brainery. All Rights Reserved.
+          </Link>
         </span>
       </div>
     </>
