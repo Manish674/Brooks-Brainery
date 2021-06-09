@@ -47,13 +47,19 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-around w-1/2 lg:justify-start">
             <div className="flex justify-around w-full max-w-sm text-2xl lg:mb-3 lg:w-4/5 lg:mx-auto ">
               <span className="p-2 rounded-full hover:bg-transi">
-                <FiInstagram className="cursor-pointer " />
+                <a href="https://www.instagram.com/brooksbrainery/">
+                  <FiInstagram className="cursor-pointer " />
+                </a>
               </span>
               <span className="p-2 rounded-full hover:bg-transi">
-                <FiFacebook className="cursor-pointer" />
+                <a href="https://m.facebook.com/BrooksBrainery/">
+                  <FiFacebook className="cursor-pointer" />
+                </a>
               </span>
               <span className="p-2 rounded-full hover:bg-transi">
-                <FiLinkedin className="cursor-pointer" />
+                <a href="https://www.linkedin.com/company/brooks-brainery/">
+                  <FiLinkedin className="cursor-pointer" />
+                </a>
               </span>
             </div>
             <ul>
@@ -64,7 +70,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="" className="hover:underline text-greeni">
-                  Voluteer as student
+                  Voluteer as Teacher
                 </Link>
               </li>
               <li>
