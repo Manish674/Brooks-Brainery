@@ -1,6 +1,6 @@
 import React from "react";
-import menStack from "../imgs/GreenMan";
-import freeLabel from "../imgs/Freelable";
+import MenStack from "../imgs/GreenMan";
+import FreeLabel from "../imgs/Freelable";
 import emoji from "../imgs/Emoji";
 import TestPaper from "../imgs/Testpaper";
 
@@ -8,7 +8,9 @@ const Hero = () => {
   return (
     <div>
       <div className="flex flex-col items-center w-full mx-auto lg:flex-row lg:w-4/5 lg:space-x-12 space-y-8">
-        <span className="lg:w-1/2 lg:order-last">{menStack}</span>
+        <span className="lg:w-1/2 lg:order-last">
+          <MenStack />
+        </span>
         <div className="flex flex-col w-4/5 lg:w-1/2 space-y-4">
           <h3 className="text-3xl font-bold">Brooks Brainery</h3>
           <p className="text-lg lg:max-w-md">
@@ -18,7 +20,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col items-center w-full mx-auto mt-12 lg:flex-row lg:w-4/5 lg:justify-around space-x-4 space-y-4 ">
-        <span className="max-w-sm lg:w-1/2 lg:order-first ">{freeLabel}</span>
+        <span className="max-w-sm lg:w-1/2 lg:order-first ">
+          <FreeLabel />
+        </span>
         <div className="flex flex-col w-4/5 lg:w-auto space-y-4">
           <h3 className="text-3xl font-bold">Freebie</h3>
           <p className="text-lg lg:max-w-md">
@@ -41,7 +45,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col items-center w-full mx-auto mt-12 lg:justify-around lg:flex-row lg:w-4/5 lg:space-x-12 space-y-8 ">
-        <span className="max-w-sm w-4/5 mx-auto">{emoji}</span>
+        <span className="w-4/5 max-w-sm mx-auto">{emoji}</span>
         <div className="flex flex-col w-4/5 space-y-4 lg:w-1/2">
           <h3 className="text-3xl font-bold">Your personal teacher friend</h3>
           <p className="text-lg lg:max-w-md">
