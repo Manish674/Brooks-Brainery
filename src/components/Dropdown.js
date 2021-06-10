@@ -6,19 +6,19 @@ const Dropdown = ({ open }) => {
   return (
     <div className="flex justify-end">
       <div
-        className={`items-center text-center font-semibold  transform ${transalteValue} flex flex-col transition duration-[500ms] absolute w-[90%] h-screen bg-[black]`}
+        className={`max-w-[304px] items-center text-center font-semibold  transform ${transalteValue} flex flex-col transition duration-[500ms] absolute w-[90%] h-screen bg-[white] text-black`}
       >
-        <div className="w-4/5 p-4 border-b">
-          <Link>Home</Link>
+        <div className="w-4/5 p-4 border-b border-[black]">
+          <Link to="/">Home</Link>
         </div>
-        <div className="p-4 w-4/5 border-b">
-          <Link>
+        <div className="w-4/5 p-4 border-b  border-[black]">
+          <Link to="/summer-program">
             Summer <br />
             Programm
           </Link>
         </div>
-        <div className="w-4/5 p-4 border-b">
-          <Link>Volunteer</Link>
+        <div className="w-4/5 p-4 border-b border-[black] ">
+          <Link to="">Volunteer</Link>
         </div>
       </div>
     </div>
