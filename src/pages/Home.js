@@ -7,22 +7,22 @@ import { Heading, ShortHeading } from "../imgs/Heading";
 const cardData = [
   {
     heading: "Join as a student",
-    para:
-      "Brooks Brainery is going to provide students with a big bucket of programs to choose from. A student can even opt out of the program anytime, or switch programs. ",
+    para: "Brooks Brainery is going to provide students with a big bucket of programs to choose from. A student can even opt out of the program anytime, or switch programs. ",
     bgColor: "bg-red-600",
     month: "June - July",
+    link: "",
   },
   {
     heading: "Volunteer as a teacher",
-    para:
-      "As the most important part of Brooks Brainery, we request you to volunteer as a teacher, to impart your knowledge and help shape the new generation of high-schoolers. ",
+    para: "As the most important part of Brooks Brainery, we request you to volunteer as a teacher, to impart your knowledge and help shape the new generation of high-schoolers. ",
     bgColor: "bg-yellow-400",
+    link: "",
   },
   {
     heading: "Join Brooks Brainery team",
-    para:
-      "We always welcome volunteers open-armingly. Anyone who is driven enough to help others are always invited.",
+    para: "We always welcome volunteers open-armingly. Anyone who is driven enough to help others are always invited.",
     bgColor: "bg-blue-400",
+    link: "/join-bb",
   },
 ];
 
@@ -40,7 +40,13 @@ const Home = () => {
       </div>
       <div className="flex flex-col items-stretch items-center mx-auto lg:w-4/5 lg:flex-row lg:space-x-4 lg:space-y-0 space-y-3">
         {cardData.map((el, i) => (
-          <Card heading={el.heading} bg={el.bgColor} para={el.para} key={i} />
+          <Card
+            link={el.link}
+            heading={el.heading}
+            bg={el.bgColor}
+            para={el.para}
+            key={i}
+          />
         ))}
       </div>
       <SlidingCard />
